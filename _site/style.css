@@ -1,47 +1,63 @@
 body {
-  font-family: poppins;
-  line-height: 2;
+font-family: poppins;
+line-height: 2;
 }
 @media (min-width: 991.98px) {
-  .container-fluid {
-    padding-left: 240px;
-  }
+.container-fluid {
+  padding-left: 240px;
+}
 }
 .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding: 58px 0 0;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 240px;
-    z-index: 600;
-    float: left;
-    display: block;
-    min-height: 100vh;
-  }
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+  float: left;
+  display: block;
+  min-height: 100vh;
+}
 
-  @media (max-width: 991.98px) {
-    .sidebar {
-      width: 100%;
-    }
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
   }
-  .sidebar .active {
-    border-radius: 5px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
 
-  .sidebar-sticky {
-    position: relative;
-    top: 0;
-    height: calc(100vh - 48px);
-    padding-top: 0.5rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.parallax {
+  background-image: url("img/wood.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  background-color: #F9E076;
+  opacity: 0.6;
+  /* color: beige; */
+}
+p, h, li {
+  opacity: 1;
+}
