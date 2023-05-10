@@ -18,6 +18,7 @@
     <body>
         <!-- HTML -->
         <header>
+          {% if window.width > 992 %}
           <!-- Sidebar -->
           <nav class="collapse d-lg-block sidebar">
             <div class="position-sticky" style="padding-top: 10vh;">
@@ -25,18 +26,33 @@
               <hr>
               <div class="list-group list-group-flush mx-3 mt-4">
                 {% for item in site.data.sidebar %}
-                  <a href="{{ item.link }}" class="list-group-item list-group-item-action py-2 ripple {% if page.url == item.link %}active{% endif %}" aria-current="true">
+                  <a href="{{ item.link }}" class="list-group-item">
                   {{ item.name }}
                   </a>
                 {% endfor %}
               </div>
               <hr>
-              <p class="text-center">Made by Zixuan Yu</p>
             </nav>
+            {% else %}
+            <ul class="nav nav-pills nav-fill d-lg-none fixed-bottom" id="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/#context">Context</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#hardware">Hardware</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#software">Software</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#solution">Solution</a>
+              </li>
+            </ul>
+            {% endif %}
         </header>
-        <div class="container-fluid" data-bs-spy="scroll" data-bs-target="sidebar" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+        <div class="container-fluid" data-bs-spy="scroll" data-bs-target="sidebar #nav" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
           <div class="parallax">
-            <div class="container" style="padding: 50px;" id="Context">
+            <div class="container" style="padding: 50px;" id="context">
               {{ content }}
             </div>
             <hr>

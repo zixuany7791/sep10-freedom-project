@@ -18,37 +18,26 @@
     <body>
         <!-- HTML -->
         <header>
-          <!-- Sidebar -->
-          <nav class="collapse d-lg-block sidebar">
-            <div class="position-sticky" style="padding-top: 10vh;">
-              <h3 class="text-center">Construction</h3>
-              <hr>
-              <div class="list-group list-group-flush mx-3 mt-4">
-                
-                  <a href="/#Context" class="list-group-item list-group-item-action py-2 ripple " aria-current="true">
-                  Context
-                  </a>
-                
-                  <a href="/#hardware" class="list-group-item list-group-item-action py-2 ripple " aria-current="true">
-                  Hardware
-                  </a>
-                
-                  <a href="/#software" class="list-group-item list-group-item-action py-2 ripple " aria-current="true">
-                  Software
-                  </a>
-                
-                  <a href="/#solution" class="list-group-item list-group-item-action py-2 ripple " aria-current="true">
-                  Solution
-                  </a>
-                
-              </div>
-              <hr>
-              <p class="text-center">Made by Zixuan Yu</p>
-            </nav>
+          
+            <ul class="nav nav-pills nav-fill d-lg-none fixed-bottom" id="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/#context">Context</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#hardware">Hardware</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#software">Software</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#solution">Solution</a>
+              </li>
+            </ul>
+            
         </header>
-        <div class="container-fluid" data-bs-spy="scroll" data-bs-target="sidebar" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+        <div class="container-fluid" data-bs-spy="scroll" data-bs-target="sidebar #nav" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
           <div class="parallax">
-            <div class="container" style="padding: 50px;" id="Context">
+            <div class="container" style="padding: 50px;" id="context">
               <h4 id="what-is-construction">What is Construction?</h4>
 <p>Construction is the process of building an object using science and arts. It is one of the most important majors to have because without it, we cannot build comfortable space for people to live and work. But construction is one of the majors that people don’t want to major in due to heavy physical work and bad environment. Therefore people are making new inventions that make construction easier to do.</p>
 
@@ -139,11 +128,7 @@
         <li>Facilities needs checklist</li>
     </ul>
 </ul>
-* Function: Simulation
-  * Can create blueprint based on conditions given and spot
-  * List pros and con
-  * estimate average cost, material needs,
-  * Facilities needs checklist
+
             </div>
           </div>
         </div>
