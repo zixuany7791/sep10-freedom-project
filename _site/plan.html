@@ -18,26 +18,57 @@
     <body>
         <!-- HTML -->
         <header>
-          
-            <ul class="nav nav-pills nav-fill d-lg-none fixed-bottom" id="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="/#context">Context</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/#hardware">Hardware</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/#software">Software</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/#solution">Solution</a>
-              </li>
-            </ul>
+          <ul class="nav nav-pills nav-fill d-lg-none fixed-bottom" id="nav">
             
+            <li class="nav-item">
+              <a class="nav-link" href="/#context">Context</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/#hardware">Hardware</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/#software">Software</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/#solution">Solution</a>
+            </li>
+            
+          </ul>
+
+          <!-- Sidebar -->
+          <nav class="collapse d-lg-block sidebar">
+            <div class="position-sticky" style="padding-top: 10vh;">
+              <h3 class="text-center">Construction</h3>
+              <hr>
+              <div class="list-group list-group-flush mx-3 mt-4">
+                
+                  <a href="/#context" class="list-group-item">
+                  Context
+                  </a>
+                
+                  <a href="/#hardware" class="list-group-item">
+                  Hardware
+                  </a>
+                
+                  <a href="/#software" class="list-group-item">
+                  Software
+                  </a>
+                
+                  <a href="/#solution" class="list-group-item">
+                  Solution
+                  </a>
+                
+              </div>
+              <hr>
+            </nav>
         </header>
-        <div class="container-fluid" data-bs-spy="scroll" data-bs-target="sidebar #nav" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+        <div class="container-fluid" data-bs-spy="scroll" data-bs-target="sidebar" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
           <div class="parallax">
             <div class="container" style="padding: 50px;" id="context">
+              <!-- <div id="contexts"> -->
               <p>4/17/23 - 4/21/23 (One week)</p>
 
 <ul>
@@ -67,32 +98,34 @@
   <li>fieldwire</li>
 </ul>
 
+              <!-- </div> -->
             </div>
             <hr>
             <div class="container text-center" style="padding: 50px;">
               <h3>Modern technologies</h3>
             </div>
             <div class="container" style="padding: 50px;" id="hardware">
-              <h4>Hardware:</h4>
-              <div class="row" style="padding: 30px;">
-                <div class="col-12 col-md-4">
-                  <img src="img/Drone.jpeg" style="max-width: 100%;">
-                </div>
-                <div class="col-12 col-md-8">
-                  <h5>Drone</h5>
+              <!-- <div id="Hardware"> -->
+                <h4>Hardware:</h4>
+                <div class="row" style="padding: 30px;">
+                  <div class="col-12 col-md-4">
+                    <img src="img/Drone.jpeg" style="max-width: 100%;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h5>Drone</h5>
 <ul>
     <li>Drones can be used to conduct site surveys, fly around with high resolution cameras to see how their building looks. Definitely better than workers standing at the ground looking straight up at the building.</li>
     <li>Can monitor progress during construction.</li>
     <li>Costs: $350-500</li>
 </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="row" style="padding: 30px;">
-                <div class="col-12 col-md-4">
-                  <img src="img/3d-printer.jpg" style="max-width: 100%;">
-                </div>
-                <div class="col-12 col-md-8">
-                  
+                <div class="row" style="padding: 30px;">
+                  <div class="col-12 col-md-4">
+                    <img src="img/3d-printer.jpg" style="max-width: 100%;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    
 <h5>3D Printer</h5>
 <ul>
     <li>Construct buildings with faster efficiency, productivity</li>
@@ -100,17 +133,19 @@
     <li>Less manpower needed</li>
     <li>Cost: $180k - 1M</li>
 </ul>
+                  </div>
                 </div>
-              </div>
+             <!-- </div> -->
             </div>
             <div class="container" style="padding: 50px;" id="software">
-              <h4>Software:</h4>
-              <div class="row" style="padding: 30px;">
-                <div class="col-12 col-md-4">
-                  <img src="img/fieldwire.png" class="center" width="150vh;">
-                </div>
-                <div class="col-12 col-md-8">
-                  
+              <!-- <div id="Software"> -->
+                <h4>Software:</h4>
+                <div class="row" style="padding: 30px;">
+                  <div class="col-12 col-md-4">
+                    <img src="img/fieldwire.png" class="center" width="150vh;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    
     <h5>FieldWire</h5>
     <ul>
         <li>App is free</li>
@@ -122,38 +157,48 @@
 
 
 
+                  </div>
                 </div>
-              </div>
-              <div class="row" style="padding: 30px;">
-                <div class="col-12 col-md-4">
-                  <img src="img/plangrid.png" class="center" width="150vh;">
-                </div>
-                <div class="col-12 col-md-8">
-                  <h5>Plangrid</h5>
+                <div class="row" style="padding: 30px;">
+                  <div class="col-12 col-md-4">
+                    <img src="img/plangrid.png" class="center" width="150vh;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <h5>Plangrid</h5>
 <ul>
     <li>App is free</li>
     <li>Able to share blueprint, notes, drawing</li>
     <li>Can access data online and offline</li>
     <li>Mainly used for information management</li>
 </ul>
+                  </div>
                 </div>
-              </div>
+              <!-- </div> -->
             </div>
             <hr>
             <div class="container text-center" style="padding: 50px;">
               <h3>Brainstormed invention</h3>
             </div>
             <div class="container" style="padding: 50px;" id="solution">
-              <ul>
-    <li>Function: Simulation</li>
-    <ul>
-        <li>Can create blueprint based on conditions given and spot</li>
-        <li>List pros and con</li>
-        <li>estimate average cost, material needs</li>
-        <li>Facilities needs checklist</li>
-    </ul>
+              <!-- <div id="Solution"> -->
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <img src="img/Simulate.jpg" class="center" style="max-width: 100%;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    
+<h5>Function: Simulation</h5>
+<ul>
+    <li>Can create blueprint based on conditions given and spot</li>
+    <li>List pros and con</li>
+    <li>estimate average cost, material needs</li>
+    <li>Facilities needs checklist</li>
 </ul>
 
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

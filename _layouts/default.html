@@ -18,6 +18,13 @@
     <body>
         <!-- HTML -->
         <header>
+          <ul class="nav nav-pills nav-fill d-lg-none fixed-bottom" id="nav">
+            {% for item in site.data.sidebar %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+          </ul>
 
           <!-- Sidebar -->
           <nav class="collapse d-lg-block sidebar">
@@ -33,76 +40,75 @@
               </div>
               <hr>
             </nav>
-
-            <ul class="nav nav-pills nav-fill d-lg-none fixed-bottom" id="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="/#context">Context</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/#hardware">Hardware</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/#software">Software</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/#solution">Solution</a>
-              </li>
-            </ul>
-
         </header>
-        <div class="container-fluid" data-bs-spy="scroll" data-bs-target="sidebar #nav" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+        <div class="container-fluid" data-bs-spy="scroll" data-bs-target="sidebar" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
           <div class="parallax">
             <div class="container" style="padding: 50px;" id="context">
+              <!-- <div id="contexts"> -->
               {{ content }}
+              <!-- </div> -->
             </div>
             <hr>
             <div class="container text-center" style="padding: 50px;">
               <h3>Modern technologies</h3>
             </div>
             <div class="container" style="padding: 50px;" id="hardware">
-              <h4>Hardware:</h4>
-              <div class="row" style="padding: 30px;">
-                <div class="col-12 col-md-4">
-                  <img src="img/Drone.jpeg" style="max-width: 100%;">
+              <!-- <div id="Hardware"> -->
+                <h4>Hardware:</h4>
+                <div class="row" style="padding: 30px;">
+                  <div class="col-12 col-md-4">
+                    <img src="img/Drone.jpeg" style="max-width: 100%;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    {% include drone.html %}
+                  </div>
                 </div>
-                <div class="col-12 col-md-8">
-                  {% include drone.html %}
+                <div class="row" style="padding: 30px;">
+                  <div class="col-12 col-md-4">
+                    <img src="img/3d-printer.jpg" style="max-width: 100%;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    {% include 3d-printer.html %}
+                  </div>
                 </div>
-              </div>
-              <div class="row" style="padding: 30px;">
-                <div class="col-12 col-md-4">
-                  <img src="img/3d-printer.jpg" style="max-width: 100%;">
-                </div>
-                <div class="col-12 col-md-8">
-                  {% include 3d-printer.html %}
-                </div>
-              </div>
+             <!-- </div> -->
             </div>
             <div class="container" style="padding: 50px;" id="software">
-              <h4>Software:</h4>
-              <div class="row" style="padding: 30px;">
-                <div class="col-12 col-md-4">
-                  <img src="img/fieldwire.png" class="center" width="150vh;">
+              <!-- <div id="Software"> -->
+                <h4>Software:</h4>
+                <div class="row" style="padding: 30px;">
+                  <div class="col-12 col-md-4">
+                    <img src="img/fieldwire.png" class="center" width="150vh;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    {% include fieldwire.html %}
+                  </div>
                 </div>
-                <div class="col-12 col-md-8">
-                  {% include fieldwire.html %}
+                <div class="row" style="padding: 30px;">
+                  <div class="col-12 col-md-4">
+                    <img src="img/plangrid.png" class="center" width="150vh;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    {% include plangrid.html %}
+                  </div>
                 </div>
-              </div>
-              <div class="row" style="padding: 30px;">
-                <div class="col-12 col-md-4">
-                  <img src="img/plangrid.png" class="center" width="150vh;">
-                </div>
-                <div class="col-12 col-md-8">
-                  {% include plangrid.html %}
-                </div>
-              </div>
+              <!-- </div> -->
             </div>
             <hr>
             <div class="container text-center" style="padding: 50px;">
               <h3>Brainstormed invention</h3>
             </div>
             <div class="container" style="padding: 50px;" id="solution">
-              {% include solution.html %}
+              <!-- <div id="Solution"> -->
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <img src="img/Simulate.jpg" class="center" style="max-width: 100%;">
+                  </div>
+                  <div class="col-12 col-md-8">
+                    {% include solution.html %}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
